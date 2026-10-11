@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
         {
             changeItemRenderer.sprite = changedSprite;
             Points++;
+            correct.Play();
             Score.text = "Score: " + Points;
             itemChanged = false;
             treasureBox.SetActive(false);
